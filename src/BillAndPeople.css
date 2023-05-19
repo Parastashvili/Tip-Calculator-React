@@ -12,6 +12,11 @@
   justify-content: space-between;
   height: 48px;
   padding: 0px 18px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.billAndPeople:hover {
+  border: 2px solid var(--hoverField);
 }
 .inputFields {
   width: 90%;
@@ -25,4 +30,9 @@
   color: var(--darkBG);
   background-color: transparent;
   border-width: 0px;
+  outline: none;
+  cursor: pointer;
+}
+.inputFields::placeholder {
+  color: var(--darkBG);
 }

@@ -17,12 +17,14 @@ function App() {
         <BillAndPeople name="Bill" image={dollarLogo} imageAlt="dollar-logo" />
         <div>
           <h5 className="selectTip">Select Tip %</h5>
-          <Percents count="5%" value={5} />
-          <Percents count="10%" value={10} />
-          <Percents count="15%" value={15} />
-          <Percents count="25%" value={25} />
-          <Percents count="50%" value={50} />
-          <Percents count="Custom" value={10} />
+          <div className="percentContainer">
+            <Percents count="5%" value={5} />
+            <Percents count="10%" value={10} />
+            <Percents count="15%" value={15} />
+            <Percents count="25%" value={25} />
+            <Percents count="50%" value={50} />
+            <Percents count="Custom" value={10} />
+          </div>
         </div>
         <BillAndPeople
           name="Number of People"
@@ -40,5 +42,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

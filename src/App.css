@@ -9,6 +9,9 @@
   --person: #7f9d9f;
   --textColor: #5e7a7d;
   --fieldBG: #f3f9fa;
+  --customColor: #547878;
+  --hoverColor: #9fe8df;
+  --hoverField: #26c2ae;
 }
 body {
   width: 100vw;
@@ -53,10 +56,19 @@ body {
   color: var(--darnNum);
   font-family: "Space Mono";
   margin-top: 11px;
+  cursor: pointer;
+}
+.resetBTN:hover {
+  background: #9fe8df;
 }
 .selectTip {
   font-size: 16px;
   line-height: 24px;
   color: var(--textColor);
   margin-bottom: 16px;
+}
+.percentContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
 }
