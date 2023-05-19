@@ -1,0 +1,28 @@
+.billAndPeopleNames {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--textColor);
+  margin-bottom: 6px;
+}
+.billAndPeople {
+  background: var(--fieldBG);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  padding: 0px 18px;
+}
+.inputFields {
+  width: 90%;
+  height: 40px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: right;
+  color: var(--darkBG);
+  background-color: transparent;
+  border-width: 0px;
+}
