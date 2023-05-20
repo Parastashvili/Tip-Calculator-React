@@ -13,7 +13,7 @@
   color: var(--whiteNum);
   cursor: pointer;
 }
-.percentTextNum_active {
+.percentTextNumA {
   background: var(--lightDarkBG);
   border-radius: 5px;
   width: 100%;
