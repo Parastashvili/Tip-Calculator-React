@@ -9,11 +9,11 @@ function Percent(props) {
   useEffect(() => {
     if (selectedPercent !== "Custom") {
       if (
-        selectedPercent == 5 ||
-        selectedPercent == 10 ||
-        selectedPercent == 15 ||
-        selectedPercent == 25 ||
-        selectedPercent == 50
+        selectedPercent === 5 ||
+        selectedPercent === 10 ||
+        selectedPercent === 15 ||
+        selectedPercent === 25 ||
+        selectedPercent === 50
       ) {
         document.querySelector(".customInput").value = "";
       } else {
