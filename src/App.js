@@ -1,11 +1,11 @@
 import "./reset.css";
 import "./App.css";
+import Percent from "./Percents";
+import Summer from "./Sum";
 import logo from "./images/logo.svg";
 import dollarLogo from "./images/icon-dollar.svg";
 import personLogo from "./images/icon-person.svg";
 import BillAndPeople from "./BillAndPeople";
-import Percent from "./Percents";
-import Summer from "./Sum";
 
 const percents = [5, 10, 15, 25, 50];
 
