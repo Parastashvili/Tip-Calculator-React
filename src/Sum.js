@@ -1,5 +1,4 @@
 import "./Sum.css";
-
 const Summer = (props) => {
   return (
     <div className="totalContainer">
