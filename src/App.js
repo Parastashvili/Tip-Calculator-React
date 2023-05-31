@@ -14,12 +14,18 @@ function App() {
         <img src={logo} alt="site-logo" />
       </header>
       <section className="container">
-        <BillAndPeople name="Bill" image={dollarLogo} imageAlt="dollar-logo" />
+        <BillAndPeople
+          idName="bill"
+          name="Bill"
+          image={dollarLogo}
+          imageAlt="dollar-logo"
+        />
         <div>
           <h5 className="selectTip">Select Tip %</h5>
-            <Percent percents={percents} />
+          <Percent percents={percents} />
         </div>
         <BillAndPeople
+          idName="people"
           name="Number of People"
           image={personLogo}
           imageAlt="person-logo"
@@ -29,7 +35,14 @@ function App() {
             <Summer name="Tip Amount" addition="/ person" />
             <Summer name="Total" addition="/ person" />
           </div>
-          <button className="resetBTN">RESET</button>
+          <button
+            className="resetBTN"
+            onClick={function () {
+              window.location.reload();
+            }}
+          >
+            RESET
+          </button>
         </div>
       </section>
     </div>

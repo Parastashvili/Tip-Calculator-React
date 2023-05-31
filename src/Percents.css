@@ -58,6 +58,10 @@
   background-color: transparent;
   outline: none;
   cursor: pointer;
+  border: 2px solid transparent;
+}
+.customInput:hover {
+  border: 2px solid var(--hoverField);
 }
 .customInput::placeholder {
   color: var(--customColor);

@@ -12,6 +12,7 @@
   --customColor: #547878;
   --hoverColor: #9fe8df;
   --hoverField: #26c2ae;
+  --warning: #E17457;
 }
 body {
   min-height: 100vh;

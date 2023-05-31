@@ -36,3 +36,20 @@
 .inputFields::placeholder {
   color: var(--darkBG);
 }
+.zeroWarningText {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: var(--warning);
+}
+#bill {
+  display: none;
+}
+#people {
+  display: none;
+}
+.zeroWarning {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
