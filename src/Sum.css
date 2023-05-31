@@ -22,3 +22,10 @@
   letter-spacing: -0.666667px;
   color: var(--lightNum);
 }
+@media (min-width: 1440px) {
+  .sumAmount {
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -1px;
+  }
+}

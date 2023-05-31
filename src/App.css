@@ -12,7 +12,7 @@
   --customColor: #547878;
   --hoverColor: #9fe8df;
   --hoverField: #26c2ae;
-  --warning: #E17457;
+  --warning: #e17457;
 }
 body {
   min-height: 100vh;
@@ -39,6 +39,11 @@ body {
   background-color: var(--whiteNum);
   box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
   border-radius: 25px 25px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.innerContainer {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -75,4 +80,26 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 16px;
+}
+@media (min-width: 1440px) {
+  .container {
+    flex-direction: row;
+    gap: 48px;
+    border-radius: 25px;
+  }
+  .summaryContainer {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 333px;
+  }
+  .siteLogo {
+    margin-bottom: 88px;
+  }
+  .percentContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 16px;
+    grid-column-gap: 14px;
+  }
 }

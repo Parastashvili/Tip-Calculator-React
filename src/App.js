@@ -14,22 +14,24 @@ function App() {
         <img src={logo} alt="site-logo" />
       </header>
       <section className="container">
-        <BillAndPeople
-          idName="bill"
-          name="Bill"
-          image={dollarLogo}
-          imageAlt="dollar-logo"
-        />
-        <div>
-          <h5 className="selectTip">Select Tip %</h5>
-          <Percent percents={percents} />
+        <div className="innerContainer">
+          <BillAndPeople
+            idName="bill"
+            name="Bill"
+            image={dollarLogo}
+            imageAlt="dollar-logo"
+          />
+          <div>
+            <h5 className="selectTip">Select Tip %</h5>
+            <Percent percents={percents} />
+          </div>
+          <BillAndPeople
+            idName="people"
+            name="Number of People"
+            image={personLogo}
+            imageAlt="person-logo"
+          />
         </div>
-        <BillAndPeople
-          idName="people"
-          name="Number of People"
-          image={personLogo}
-          imageAlt="person-logo"
-        />
         <div className="summaryContainer">
           <div>
             <Summer name="Tip Amount" addition="/ person" />

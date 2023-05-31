@@ -48,6 +48,9 @@
 #people {
   display: none;
 }
+.warningBox{
+  border: 2px solid #E17052;
+}
 .zeroWarning {
   display: flex;
   align-items: center;

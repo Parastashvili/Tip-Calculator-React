@@ -2,6 +2,7 @@
   background: var(--darnNum);
   border-radius: 5px;
   width: 100%;
+  min-width: 117px;
   height: 48px;
   border-width: 0px;
   font-family: "Space Mono";

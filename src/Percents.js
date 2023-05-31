@@ -1,8 +1,11 @@
 import "./Percents.css";
 import { useState, useEffect } from "react";
 function counter(selectedPercent) {
+  const billAndPeopleElement = document.querySelectorAll(".billAndPeople");
   document.getElementById("bill").style.display = "none";
   document.getElementById("people").style.display = "none";
+  billAndPeopleElement[0].style.border = "2px solid transparent";
+  billAndPeopleElement[1].style.border = "2px solid transparent";
   document.querySelector(".customInput").value = selectedPercent;
   let sumAmount = "$0.00";
   let totalPerson = "$0.00";
@@ -19,14 +22,20 @@ function counter(selectedPercent) {
     ).toFixed(2)}`;
     totalAmount.innerHTML = totalPerson;
   }
+  let billBox = document.getElementById("bill");
+  let personBox = document.getElementById("people");
   if (selectedPercent != null) {
     if (bill < 1 && persons > 0) {
-      document.getElementById("bill").style.display = "block";
+      billBox.style.display = "block";
+      billAndPeopleElement[0].style.border = "2px solid #E17052";
     } else if (persons < 1 && bill > 0) {
-      document.getElementById("people").style.display = "block";
+      personBox.style.display = "block";
+      billAndPeopleElement[1].style.border = "2px solid #E17052";
     } else if (persons < 1 && bill < 1) {
-      document.getElementById("bill").style.display = "block";
-      document.getElementById("people").style.display = "block";
+      billBox.style.display = "block";
+      personBox.style.display = "block";
+      billAndPeopleElement[0].style.border = "2px solid #E17052";
+      billAndPeopleElement[1].style.border = "2px solid #E17052";
     }
   }
 }
